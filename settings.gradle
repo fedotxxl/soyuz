@@ -1,1 +1,1 @@
-include 'soyuz-shared', 'soyuz-app'
+include 'soyuz-build', 'soyuz-shared', 'soyuz-app'

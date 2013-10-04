@@ -1,2 +1,6 @@
 group = 'io.soyuz'
 version = '1.0.SNAPSHOT'
+
+dependencies {
+    compile project(":soyuz-shared")
+}
