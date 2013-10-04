@@ -1,0 +1,21 @@
+allprojects {
+    apply plugin: "idea"
+    apply plugin: "java"
+    apply plugin: "maven"
+
+    repositories {
+        mavenCentral()
+        mavenCentral(artifactUrls: ["http://maven.springframework.org/milestone"])
+    }
+
+    project.ext {
+        slf4jVersion = '1.7.2'
+        sourceCompatibility = 1.6
+    }
+
+    dependencies {
+        //add logging support
+        compile "org.slf4j:slf4j-api:$slf4jVersion"
+        compile "ch.qos.logback:logback-classic:1.0.6"
+    }
+}
