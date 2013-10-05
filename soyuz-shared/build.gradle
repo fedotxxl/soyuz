@@ -1,2 +1,8 @@
 group = 'io.soyuz'
 version = '1.0.SNAPSHOT'
+
+dependencies {
+    //add spring support
+    compile "org.springframework:spring-core:${springVersion}" //spring core
+    compile "org.springframework:spring-context:${springVersion}" //spring ioc
+}
